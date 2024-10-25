@@ -1,0 +1,38 @@
+@media screen and (max-width:1024px) {
+    body {
+        header {
+            .header_m {
+                display:flex;
+                flex-direction: column;
+            }
+            width: auto;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px 10px;
+
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}    
+/*@media screen and (max-width: 480px) {
+    body {
+        header {
+            gap: 2rem;  
+            .hcontainer1 img, .hcontainer2 img {
+                    width: 18px;
+            } 
+        }
+        footer {
+            gap: 4rem;
+            font-size: 14px;
+
+        }
+    }
+}*/    

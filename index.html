@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estos links son para CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigini>
+    <!-- Estos links resetean los estilos usados antes de procesar la logica de esta hoja para no afectar las definiciones de estilos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?familiy=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+
+    <link rel="stylesheet" href="CSS/Main.css">    
+    <title>VIAJES_MODA_MUSICA</title>
+</head>
+<body>
+    <header>
+        <section class="header_t">
+            <p>MODA EUROPEA</p>
+        </section>
+        <section class="header_m">
+            <img src="Img/Ropa para dama.jfif"></img>
+            <nav>
+                <i><img src="Img/menu_4381848.png" alt="Icono Menu"></i>
+                <i><img src="Img/agencia-de-viajes.png" alt="Logo Agencia de viajes"></i> 
+                <i><img src="Img/jacket_5628742.png" alt="Logo piel"></i>
+                <i><img src="Img/Multimedia.png" alt="Logo Multimedia"></i> 
+                <i><img src="Img/shopping-cart_10783318.png" alt="Icono Carrito"></i>
+            </nav>    
+            <nav>
+                <a href="Index.html">Home</a>
+                <a href="">Agencia de Viajes</a>
+                <a href=""> Moda y Estilo</a>
+                <a href=""> Contacto</a>
+            </nav>
+        </section>    
+    </header>
+
+    <main class="cards">
+            <article> 
+                <!-- Componente de Tarjeta-->     
+            
+                <div class="card card--product">
+                    <img src="./Img/agencia-de-viajes.png" alt="Viaje por el mundo" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Viaje alrededor del mundo</h5>
+                    <p class="card-text">Recorre el mundon en un año por avión y crucero.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#productoModal1">Detalles</button>
+                    </div>
+                </div>
+
+                <!-- Modal de Detalles del Producto -->
+                
+                <div class="modal fade" id="productoModal1" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productoModalLabel">Recorra el mundo viajando en crucero y en clase premier por avión</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>El hospedaje es en hoteles de 5 estrellas, 3 comidas al día en restaurantes típicos de las ciudades, visite lugares históricos, diversión exclusiva...</p>
+                            </div>         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <!-- Componente de Tarjeta-->     
+                
+                <div class="card card--product">
+                    <img src="./Img/chamarra.jfif" alt="Chamarra de piel para dama" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Chamarra de piel para dama</h5>
+                    <p class="card-text">Prenda de piel Importada de CANADA.</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#productoModal2">Detalles</button>
+                    </div>
+                </div>        
+
+                <!-- Modal de Detalles del Producto -->
+
+                <div class="modal fade" id="productoModal2" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productoModalLabel">Moda mundial y exclusiva directo de Canada para el mundo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>La fabricación es con altos estandares mundiales diseñado por las mejores marcas europeas a precios competitivos en el mercado...</p>
+                            </div>         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <!-- Componente de Tarjeta-->     
+                
+                <div class="card card--product">
+                    <img src="./Img/Multimedia.png" alt="Exitos Musicales de Brasil" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Exitos Musicales de Brasil</h5>
+                    <p class="card-text">Coleccion de ritmos musicales de Brasil</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#productoModal3">Detalles</button>
+                    </div>
+                </div>        
+
+                <!-- Modal de Detalles del Producto -->
+
+                <div class="modal fade" id="productoModal3" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productoModalLabel">Está colección reúne las voces virtuosas del país de la alegría</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Esta colección es un tributo a los ritmos Brasileños como Samba, Axé, Frevo, Bossa Nova, Sertanejo ...</p>
+                            </div>         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <!-- Componente de Tarjeta-->     
+                
+                <div class="card card--product">
+                    <img src="./Img/Bolsas de dama.jfif" alt="Bolsa de dama" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Bolsa de dama</h5>
+                    <p class="card-text">Bolsa de emisión limitada</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#productoModal4">Detalles</button>
+                    </div>
+                </div>        
+
+                <!-- Modal de Detalles del Producto -->
+
+                <div class="modal fade" id="productoModal4" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productoModalLabel">Artículo de dama exclusiva de pasarelas europeas.</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Bolsa de dama creada por diseñadores franceses exclusiva de las pasarelas de moda de Milán, París, Mónaco, Madrid...</p>
+                            </div>         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- Componente de Tarjeta-->     
+                
+                <div class="card card--product">
+                    <img src="./Img/Ropa para dama.jfif" alt="Ropa de dama" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Coordinado de piel</h5>
+                    <p class="card-text">Todo de piel moda otoño-invierno</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#productoModal5">Detalles</button>
+                    </div>
+                </div>        
+
+                <!-- Modal de Detalles del Producto -->
+
+                <div class="modal fade" id="productoModal5" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">            <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productoModalLabel">Coordinado para dama otoño-invierno.</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Diseñado y fabricado en León Guanajuato para el Mundo</p>
+                            </div>         
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+    </main>
+    <footer>
+        <section>
+            <small>&copy; 2024 DRG Company LLC.<br>Todos los derechos reservados.</small>           
+        </section>
+        <section>
+            <small>Llane al area comercial al telefono: (52) 55427124</small> 
+            <nav>
+                <a href="">Chatea en este momento</a>
+            </nav>           
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

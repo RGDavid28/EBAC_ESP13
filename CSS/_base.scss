@@ -1,0 +1,13 @@
+$fontFamily: "Poppins", Arial, Helvetica, sans-serif;
+@mixin dflex($flex-direction) {
+    display: flex;
+    @if $flex-direction==column {
+        flex-direction: $flex-direction;
+    }
+}
+%grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+    grid-column-gap: 15px;
+    margin: 15px 5px;
+}

@@ -1,0 +1,108 @@
+body {
+    font-family: $fontFamily;
+    header {
+        @include dflex (column);
+        padding: 2px;
+        background-color:#7fffd4;
+        height: auto;
+
+        .header_t {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 800;
+            height: 18px;
+        }
+        .header_m {
+            width: 100%;
+            padding: 10px 10px;
+            @include dflex (row);
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            img {
+                width: 35px;
+                height: 35px;            
+            }
+            nav {
+                i {
+                    
+                    width: 50px;
+                    cursor: pointer;
+                    display: inline-block;
+                
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    nav {
+                        border: 1px, solid,#008000;
+                        word-spacing: 2px;
+                    }
+                }
+            }    
+        }
+    }       
+    .cards { 
+        @extend %grid;
+        width: 100%;
+        .card {
+            &--product {
+                @include dflex (column);
+                margin: 0 5px;
+                gap: 3px;
+                border: 2px solid #6b2c8b;
+                border-radius: 8px;
+                overflow: hidden;
+                max-width: 400px;
+                max-height: 245px;
+                margin: 5px auto;
+                transition: transform 0.3s ease;
+            
+                &:hover {
+                    transform: scale(1.05);
+                }
+            
+                img {
+                    width:50px;
+                    height: 50px;
+                }
+                &__content {
+                    padding: 1em;
+            
+                    & h3 {
+                        margin: 0;
+                        font-size: 1.2em;
+                    }
+            
+                    & p {
+                        color: #555;
+                    }
+            
+                    & button {
+                        background-color: #3498db;
+                        color: #fff;
+                        padding: 0.5em 1em;
+                        border: none;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                
+                        &:hover {
+                            background-color: #2980b9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
+    footer {
+        width: 100%;
+        padding: 3px 5px;
+        background-color: #7fffb4;
+        @include dflex (row);
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        font-weight: 600;
+    }
+}    

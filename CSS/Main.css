@@ -1,0 +1,138 @@
+body .cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-column-gap: 15px;
+  margin: 15px 5px;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  background-color: #7fffd4;
+  height: auto;
+}
+body header .header_t {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  height: 18px;
+}
+body header .header_m {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+body header .header_m img {
+  width: 35px;
+  height: 35px;
+}
+body header .header_m nav i {
+  width: 50px;
+  cursor: pointer;
+  display: inline-block;
+}
+body header .header_m nav i img {
+  width: 40px;
+  height: 40px;
+}
+body header .header_m nav i nav {
+  border: 1px, solid, #008000;
+  word-spacing: 2px;
+}
+body .cards {
+  width: 100%;
+}
+body .cards .card--product {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  gap: 3px;
+  border: 2px solid #6b2c8b;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 245px;
+  margin: 5px auto;
+  transition: transform 0.3s ease;
+}
+body .cards .card--product:hover {
+  transform: scale(1.05);
+}
+body .cards .card--product img {
+  width: 50px;
+  height: 50px;
+}
+body .cards .card--product__content {
+  padding: 1em;
+}
+body .cards .card--product__content h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+body .cards .card--product__content p {
+  color: #555;
+}
+body .cards .card--product__content button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body .cards .card--product__content button:hover {
+  background-color: #2980b9;
+}
+body footer {
+  width: 100%;
+  padding: 3px 5px;
+  background-color: #7fffb4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  body header {
+    width: auto;
+  }
+  body header .header_m {
+    display: flex;
+    flex-direction: column;
+  }
+  body .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 10px;
+  }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+/*@media screen and (max-width: 480px) {
+    body {
+        header {
+            gap: 2rem;  
+            .hcontainer1 img, .hcontainer2 img {
+                    width: 18px;
+            } 
+        }
+        footer {
+            gap: 4rem;
+            font-size: 14px;
+
+        }
+    }
+}*//*# sourceMappingURL=Main.css.map */
